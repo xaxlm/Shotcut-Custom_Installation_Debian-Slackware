@@ -3,7 +3,8 @@ This is a Bash script in which Shotcut is custom installed in Debian 9 and Slack
 
 - shotcut-linux-x86_64-171002
 
-- Last Update: 22/08/2017
+- [Update date:06/04/2017] shotcut-linux-x86_64-180306
+- [Update date: 22/08/2017]shotcut-linux-x86_64-17.11.04
 
 Installation
 
