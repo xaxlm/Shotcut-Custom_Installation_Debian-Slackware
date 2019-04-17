@@ -1,8 +1,8 @@
 #!/bin/bash
-# Ultima actualización: 13/02/2019
+# Ultima actualización: 16/04/2019
 cd /
 # Se descarga Shotcut y logo
-wget https://github.com/mltframework/shotcut/releases/download/v19.01.27/shotcut-linux-x86_64-190127.txz
+wget https://github.com/mltframework/shotcut/releases/download/v19.02.28/shotcut-linux-x86_64-190228.txz
 cd /usr/local/
 echo 'Se va a instalar en /usr/local/...'
 read -p "Ingresa el nombre del directorio principal de instalacion, si no existe se creará: " DIRINST
@@ -20,15 +20,15 @@ if [ -d $DIRINST ];
 		cd $DIRINST
 fi
 sleep 2
-mv /shotcut-linux-x86_64-190127.txz .
-tar xf shotcut-linux-x86_64-190127.txz
+mv /shotcut-linux-x86_64-190228.txz .
+tar xf shotcut-linux-x86_64-190228.txz
 mv Shotcut/ shotcut
 #
 #App a Menú
 cd /usr/share/applications/
 touch shotcut.desktop
 echo '[Desktop Entry]' > shotcut.desktop
-echo 'Version=19.01.27' >> shotcut.desktop
+echo 'Version=19.02.28' >> shotcut.desktop
 echo 'Name=Shotcut' >> shotcut.desktop
 echo 'Comment=Video Editor' >> shotcut.desktop
 echo 'Exec=/usr/local/'$DIRINST'/shotcut/Shotcut.app/shotcut' >> shotcut.desktop
@@ -69,7 +69,7 @@ chmod 744 remove.sh
 touch README.txt
 echo 'Shotcut' > README.txt
 echo 'Idioma=es' >> README.txt
-echo 'Version=19.01.27' >> README.txt
+echo 'Version=19.02.28' >> README.txt
 echo 'Arquitectura=64-bit' >> README.txt
 echo 'Esta es una instalación no invasiva.' >> README.txt
 echo 'Para desinstalar ejecute el fichero remove.sh como root.' >> README.txt
@@ -95,7 +95,7 @@ echo -ne '[=================================>      ](83.30%)\r';sleep 0.2
 echo -ne '[====================================>   ](91.64%)\r';sleep 0.2
 echo -ne '[=======================================>](100.00%)\r';sleep 0.2
 echo -ne '\n'
-rm -rf /usr/local/$DIRINST/shotcut-linux-x86_64-190127.txz
+rm -rf /usr/local/$DIRINST/shotcut-linux-x86_64-190228.txz
 if [ -d /home/*/.config/Meltytech/ ];
 	then
 		rm -rf /home/*/.config/Meltytech/
