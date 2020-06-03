@@ -1,5 +1,5 @@
 #!/bin/bash
-# Ultima actualización: 04/05/2020
+# Ultima actualización: 02/06/2020
 cd /
 # Se descarga Shotcut y logo
 wget https://github.com/mltframework/shotcut/releases/download/v20.04.12/shotcut-linux-x86_64-200412.txz
